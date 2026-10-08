@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Analyst portfolio — projects, skills, dashboards and contact information.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- CSP is a first layer; adjust image/connect domains if you add new external services. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests; script-src 'self' https://cdn.jsdelivr.net https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net data:; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com https://cdn.jsdelivr.net;">
+  <title>Data Analyst | Portfolio</title>
+  <link rel="icon" type="image/png" href="images/jk-data-analyst-logo1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-loader" id="page-loader"><div class="loader-inner"><div class="loader-mark">{ }</div><div class="loader-bar"><span></span></div><p>Loading portfolio<span>...</span></p></div></div>
+  <header class="site-header" id="header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Go to home">
+         <img src="images/jk-data-analyst-logo1.png"
+         alt="JK Data Analyst"
+         class="brand-logo">
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certificates" class="nav-link" data-i18n="certNav">Certificates</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+        <button class="menu-close" id="nav-close" aria-label="Close menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+
+      <div class="nav-actions">
+        <div class="language-switcher">
+          <button class="icon-button language-button" id="language-button" aria-label="Change language" aria-expanded="false">
+            <i class="ri-translate-2"></i><span id="language-current">EN</span>
+          </button>
+          <div class="language-menu" id="language-menu">
+            <button type="button" data-lang="en"><span>🇬🇧</span> English <b>EN</b></button>
+            <button type="button" data-lang="de"><span>🇩🇪</span> Deutsch <b>DE</b></button>
+            <button type="button" data-lang="hr"><span>🇭🇷</span> Hrvatski <b>HR</b></button>
+          </div>
+        </div>
+        <button class="icon-button" id="theme-button" aria-label="Toggle theme">
+          <i class="ri-moon-line"></i>
+        </button>
+        <button class="icon-button menu-toggle" id="nav-toggle" aria-label="Open menu">
+          <i class="ri-menu-4-line"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DATA ANALYST PORTFOLIO</p>
+          <h1>Turning data into <span>clear decisions.</span></h1>
+          <p class="hero-text">
+            I analyse business data, build meaningful dashboards and translate complex
+            datasets into practical insights that people can act on.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects <i class="ri-arrow-right-line"></i></a>
+            <a class="button secondary" href="#contact">Let's connect</a>
+          </div>
+
+          <div class="hero-meta">
+            <div><strong>SQL</strong><span>Data querying</span></div>
+            <div><strong>Python</strong><span>Analysis & cleaning</span></div>
+            <div><strong>BI</strong><span>Dashboards</span></div>
+            <div><strong>Tableau</strong><span>Dashboards</span></div>
+          </div>
+        </div>
+
+        <div class="dashboard-card" aria-label="Decorative analytics dashboard">
+          <div class="dashboard-top">
+              <span>AMAZON SALES ANALYSIS</span>
+              <span class="live-pill">PORTFOLIO PROJECT</span>
+          </div>
+          <div class="metric-row">
+                <div><small>Total Sales</small><strong>78.59M</strong><span>120,378 orders</span></div>
+                <div><small>Cancellation Rate</small><strong>14.28%</strong><span>Amazon Sale Report</span></div>
+          </div>
+          <div class="chart">
+            <div class="chart-labels"><span>April</span><span>May</span><span>June</span></div>
+            <div class="bars">
+                <i style="height:100%"></i>
+                <i style="height:91%"></i>
+                <i style="height:81%"></i>
+            </div>
+          </div>
+          <div class="dashboard-bottom">
+            <span><i class="ri-database-2-line"></i> 128,969 cleaned rows</span>
+            <span><i class="ri-bar-chart-grouped-line"></i> Python · SQL · Power BI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">01 — ABOUT</p>
+          <h2>Analytical thinking with a business mindset.</h2>
+        </div>
+        <div class="demo-photo-wrap"><img class="demo-photo" src="images/IMG_20261003_201555.png" alt="Professional portrait"></div>
+        <div class="about-copy">
+          <p>
+               My professional background in logistics, production planning, quality assurance
+               and personnel planning gave me practical experience working with Excel, data
+                maintenance and structured business processes.
+              </p>
+
+              <p>
+               Today, I am expanding this experience into data analytics using SQL, Excel,
+               Python, pandas, Power BI and Tableau. Through practical projects, I focus on
+               cleaning and analysing data, identifying patterns and communicating
+               <strong>what happened, why it happened and what the data can tell us.</strong>
+              </p>
+          <div class="mini-stats">
+            <div><strong>01</strong><span>Ask the right question</span></div>
+            <div><strong>02</strong><span>Validate the data</span></div>
+            <div><strong>03</strong><span>Communicate the insight</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 — TOOLKIT</p>
+            <h2>Tools I use to solve problems.</h2>
+          </div>
+          <p>Focused on practical analysis, clean workflows and decision-ready reporting.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <i class="ri-database-2-line"></i>
+            <h3>SQL</h3>
+            <p>Queries, joins, aggregations, subqueries and window functions.</p>
+          </article>
+          <article class="skill-card">
+            <i class="ri-file-excel-2-line"></i>
+            <h3>Excel</h3>
+            <p>Cleaning, formulas, pivot tables, lookups and analytical reporting.</p>
+          </article>
+          <article class="skill-card">
+            <i class="ri-code-s-slash-line"></i>
+            <h3>Python</h3>
+            <p>pandas, data cleaning, exploratory analysis and analytical workflows.</p>
+          </article>
+          <article class="skill-card">
+            <i class="ri-dashboard-3-line"></i>
+            <h3>Visualisation</h3>
+            <p>Dashboards and reports designed around KPIs, trends and business questions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 — SELECTED WORK</p>
+            <h2>Projects built to answer real questions.</h2>
+          </div>
+          <p>Practical data analysis projects using real-world workflows and business questions.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured">
+           <div class="project-visual sales"><img src="images/Amazon_Sale_Report_Dashboard_powebbi.png" alt="Amazon Sale Report — Power BI Dashboard"><div class="image-label">AMAZON SALES ANALYSIS</div></div><div class="project-body">
+              <span class="project-type">Python · SQL · Power BI</span>
+              <h3>Amazon Sale Report</h3>
+              <p>Cleaned and analysed e-commerce sales data with Python and SQL, then built a Power BI dashboard to explore sales, orders, cancellations and product performance.</p>
+              <div class="project-links">
+                <a href="https://github.com/josipakarr22-cpu/Amazon_Sale_Report" target="_blank" rel="noopener noreferrer" aria-label="View Amazon Sale Report on GitHub"><i class="ri-github-line"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual customers">
+            <img id="retail-dashboard-image"
+              src="images/Ecommerce_Sales_Dashboard_tableau.PNG"
+                alt="German E-Commerce Retail Sales Analysis — Tableau Dashboard">
+              <div class="image-label">RETAIL SALES ANALYSIS</div>
+              </div>
+              <div class="project-body">
+              <span class="project-type">Excel · Tableau</span>
+              
+              <div class="dashboard-switch">
+                <button type="button" class="dashboard-tab active" data-dashboard="tableau"> Tableau
+                </button>
+                <button type="button" class="dashboard-tab" data-dashboard="excel"> Excel
+                </button>
+                  </div>
+              <h3>German E-Commerce Retail Sales Analysis</h3>
+              <p>Cleaned and analysed German retail sales data in Excel using PivotTables and KPIs, then created interactive dashboards in Excel and Tableau.</p>
+              <div class="project-links">
+                <a href="https://github.com/josipakarr22-cpu/German_Ecommerce_Retail_Sales_Analysis" target="_blank" rel="noopener noreferrer" aria-label="View German E-Commerce Retail Sales Analysis on GitHub"><i class="ri-github-line"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="certificates section" id="certificates">
+  <div class="container">
+
+    <div class="section-heading certificate-heading">
+      <div>
+        <p class="eyebrow">04 — EDUCATION & CERTIFICATIONS</p>
+        <h2>Education, certificates & continuous learning.</h2>
+      </div>
+
+      <p>
+        My education and continuous learning focus on data analysis,
+        supported by a technical background in web development.
+      </p>
+    </div>
+
+    <div class="certificate-grid">
+
+  <!-- GOOGLE DATA ANALYTICS -->
+  <article class="certificate-card">
+
+    <div class="certificate-image">
+      <img
+        src="images/certificates/google-data-analytics-certificate.png"
+        alt="Google Data Analytics Professional Certificate">
+    </div>
+
+    <div class="certificate-info">
+      <span class="certificate-icon">
+        <i class="ri-bar-chart-grouped-line"></i>
+      </span>
+
+      <h3>Google Data Analytics Professional Certificate</h3>
+      <p>Google · Coursera · 2026</p>
+
+      <a
+        href="images/certificates/google-data-analytics-certificate.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="certificate-button">
+        View certificate
+        <i class="ri-external-link-line"></i>
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- WEB DEVELOPMENT -->
+  <article class="certificate-card">
+
+    <div class="certificate-image">
+      <img
+        src="images/certificates/web-developer-certificate.png"
+        alt="Certified PHP Web Developer Certificate">
+    </div>
+
+    <div class="certificate-info">
+      <span class="certificate-icon">
+        <i class="ri-code-s-slash-line"></i>
+      </span>
+
+      <h3>Certified PHP Web Developer</h3>
+      <p>ITAcademy · LINKgroup · 2025</p>
+
+      <a
+        href="images/certificates/web-developer-certificate.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="certificate-button">
+        View certificate
+        <i class="ri-external-link-line"></i>
+      </a>
+    </div>
+
+  </article>
+</div>
+</div>
+</section>
+
+
+    <section class="process section" id="workflow">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">05 — MY DATA ANALYSIS WORKFLOW</p>
+            <h2>From raw data to clear, useful insights.</h2>
+          </div>
+          <p>I follow a structured process so that every analysis is understandable, reproducible and focused on answering a real question.</p>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow-card"><span class="workflow-number">01</span><i class="ri-question-line"></i><h3>Ask</h3><p>Define the business question, goal and key metric before working with the data.</p></article>
+          <article class="workflow-card"><span class="workflow-number">02</span><i class="ri-database-2-line"></i><h3>Prepare</h3><p>Collect the relevant data from files, spreadsheets, databases or other sources.</p></article>
+          <article class="workflow-card"><span class="workflow-number">03</span><i class="ri-brush-3-line"></i><h3>Clean</h3><p>Check missing values, duplicates, incorrect formats and inconsistencies.</p></article>
+          <article class="workflow-card"><span class="workflow-number">04</span><i class="ri-search-eye-line"></i><h3>Analyze</h3><p>Use SQL, Python, Pandas and Excel to find patterns, trends and useful answers.</p></article>
+          <article class="workflow-card"><span class="workflow-number">05</span><i class="ri-bar-chart-grouped-line"></i><h3>Visualize</h3><p>Turn findings into clear charts, dashboards and visual stories that are easy to understand.</p></article>
+          <article class="workflow-card"><span class="workflow-number">06</span><i class="ri-lightbulb-line"></i><h3>Share &amp; Act</h3><p>Communicate the key insights and connect them to practical decisions or next steps.</p></article>
+        </div>
+
+        <div class="workflow-tools"><span>Tools I use</span><b>Excel</b><b>SQL</b><b>Python</b><b>Pandas</b><b>Tableau</b><b>Power BI</b></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-box contact-grid">
+       <div><p class="eyebrow">06 — CONTACT</p><h2>Let's talk about data.</h2><p class="contact-text">Feel free to contact me using the form below.</p></div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+          <label><span data-i18n="formName">Name</span><input type="text" name="from_name" required minlength="2" maxlength="80" autocomplete="name" placeholder="Your name" data-i18n-placeholder="placeholderName"></label>
+          <label><span data-i18n="formEmail">Email</span><input type="email" name="from_email" required maxlength="120" autocomplete="email" placeholder="you@example.com"></label></div>
+          <label><span data-i18n="formSubject">Subject</span><input type="text" name="subject" required minlength="3" maxlength="120" placeholder="Subject" data-i18n-placeholder="placeholderSubject"></label>
+          <label><span data-i18n="formMessage">Message</span><textarea name="message" rows="5" required minlength="10" maxlength="3000" placeholder="Your message..." data-i18n-placeholder="placeholderMessage"></textarea></label>
+          <div class="honeypot" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" id="website" tabindex="-1" autocomplete="off"></label></div>
+          <button class="button primary" id="submit-button" type="submit"><span data-i18n="sendMessage">Send message</span> <i class="ri-send-plane-line"></i></button>
+          <p id="contact-message" class="contact-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="certificate-modal" id="certificate-modal" aria-hidden="true">
+    <div class="certificate-backdrop"></div>
+    <div class="certificate-modal-box">
+      <button type="button" class="certificate-modal-close" id="certificate-modal-close" aria-label="Close certificate">
+        <i class="ri-close-line"></i>
+      </button>
+      <div id="certificate-modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Josipa Karjakovic · Data Analyst Portfolio</span>
+  </div>
+</footer>
+
+  <button class="scroll-top" id="scroll-up" aria-label="Scroll to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
