@@ -605,3 +605,28 @@ body.dark-theme .certificate-image {
   border-color: #43e97b;
   color: #101510;
 }
+
+/* ===== LIGHT MODE FIX ===== */
+
+/* Tableau / Excel - neaktivni gumbi */
+body:not(.dark-theme) .dashboard-tab:not(.active) {
+    color: #132025;
+    border-color: #68777d;
+    background: #e9eef0;
+}
+
+/* Tableau / Excel - hover */
+body:not(.dark-theme) .dashboard-tab:not(.active):hover {
+    color: #087f72;
+    border-color: #087f72;
+}
+
+/* Workflow - naslovi koraka */
+body:not(.dark-theme) .process .workflow-card h3 {
+    color: #132025;
+}
+
+/* Workflow - opis koraka */
+body:not(.dark-theme) .process .workflow-card p {
+    color: #68777d;
+}
